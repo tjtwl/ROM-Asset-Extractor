@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C63A45C-A347-4C00-9701-0AA2281CEF2E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RomAssetExtractor</RootNamespace>
+    <AssemblyName>RomAssetExtractor</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="YamlDotNet, Version=11.0.0.0, Culture=neutral, PublicKeyToken=ec19458f3c15af5e, processorArchitecture=MSIL">
+      <HintPath>..\packages\YamlDotNet.11.2.1\lib\net45\YamlDotNet.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetExtractor.cs" />
+    <Compile Include="GbaSystem\GbaColor.cs" />
+    <Compile Include="GbaSystem\Graphics.cs" />
+    <Compile Include="GbaSystem\Lz77.cs" />
+    <Compile Include="GbaSystem\Pointer.cs" />
+    <Compile Include="GbaSystem\RomReader.cs" />
+    <Compile Include="Pokemon\Alphabet.cs" />
+    <Compile Include="Pokemon\Entities\Animations.cs" />
+    <Compile Include="Pokemon\Entities\Bank.cs" />
+    <Compile Include="Pokemon\Entities\BaseStats.cs" />
+    <Compile Include="Pokemon\Entities\BattleAnims\BattleAnimScript.cs" />
+    <Compile Include="Pokemon\Entities\BattleAnims\BattleAnimScriptArgument.cs" />
+    <Compile Include="Pokemon\Entities\BattleAnims\BattleAnimScriptCall.cs" />
+    <Compile Include="Pokemon\Entities\BattleAnims\BattleAnimScriptCommand.cs" />
+    <Compile Include="Pokemon\Entities\BattleAnims\BattleAnimScriptModel.cs" />
+    <Compile Include="Pokemon\Entities\BattleAnims\BattleAnimSpriteReference.cs" />
+    <Compile Include="Pokemon\Entities\BattleAnims\BattleAnimSpriteTemplateReference.cs" />
+    <Compile Include="Pokemon\Entities\Evolution.cs" />
+    <Compile Include="Pokemon\Entities\MapBattleScene.cs" />
+    <Compile Include="Pokemon\Entities\MapHeader.cs" />
+    <Compile Include="Pokemon\Entities\MapLayout.cs" />
+    <Compile Include="Pokemon\Entities\MapType.cs" />
+    <Compile Include="Pokemon\Entities\Metatile.cs" />
+    <Compile Include="Pokemon\Entities\MetatileConstants.cs" />
+    <Compile Include="Pokemon\Entities\MetatileLayout.cs" />
+    <Compile Include="Pokemon\Entities\Map.cs" />
+    <Compile Include="Pokemon\Entities\SpeciesModel.cs" />
+    <Compile Include="Pokemon\Entities\Sprites\SpriteReference.cs" />
+    <Compile Include="Pokemon\Entities\Sprites\OverworldPaletteReference.cs" />
+    <Compile Include="Pokemon\Entities\Sprites\OverworldSpriteReference.cs" />
+    <Compile Include="Pokemon\Entities\Sprites\OamData.cs" />
+    <Compile Include="Pokemon\Entities\Palette.cs" />
+    <Compile Include="Pokemon\Entities\BattleAnims\BattleAnimPaletteReference.cs" />
+    <Compile Include="Pokemon\Entities\Sprites\SpriteFrameImage.cs" />
+    <Compile Include="Pokemon\Entities\Tile.cs" />
+    <Compile Include="Pokemon\Entities\Tileset.cs" />
+    <Compile Include="Pokemon\Entities\WildSpeciesEncounters.cs" />
+    <Compile Include="Pokemon\PokemonRomConstants.cs" />
+    <Compile Include="Pokemon\PokemonRomReader.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\BitField.cs" />
+    <Compile Include="Utilities\BitmapExtensions.cs" />
+    <Compile Include="Utilities\BitmapSaver.cs" />
+    <Compile Include="Utilities\IOrderedDictionary.cs" />
+    <Compile Include="Utilities\OrderedDictionary.cs" />
+    <Compile Include="Utilities\SaveableBitmap.cs" />
+    <Compile Include="Utilities\StringExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="pokeroms.yml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

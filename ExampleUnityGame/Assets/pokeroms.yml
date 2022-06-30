@@ -1,0 +1,150 @@
+--- # pokeroms.yml
+# POKéMON CONSTANTS
+# - Source: https://github.com/magical/pokemon-gba-sprites/blob/faeaf978915e603916cf3916142f340d224b47f3/pokeroms.yml
+#
+# Credits and much love to these contributors:
+# - magical
+# - Mew3
+# - Kawa
+# - Matt
+# - Tau
+# ---
+
+- &ruby-en
+  Name: "Pokémon Ruby"
+  Language: en
+  Code: AXVE
+  BattleAnimCount: 288
+  BattleAnimParticles: 0x37E17C
+  Moves: 0x1C7178
+  MovesQuietBgmCount: 3
+  MovesCount: 356
+  MovesStatusCount: 9
+  MovesGeneralCount: 23
+  MovesSpecialCount: 7
+  MapNames: 0x3E7010
+  MapNamesCount: 78
+  MapBanks: 0x53344
+  MapLabels: 0x3E73E0
+  MapWildPokemon: 0x84DBC
+  # Must be sorted lowest to highest
+  MapTileAttributesJumpNorth: 0x3A
+  MapTileAttributesJumpEast: 0x38
+  MapTileAttributesJumpSouth: 0x3B
+  MapTileAttributesJumpWest: 0x39
+  MapTileAttributesSurfOnly: [0x10, 0x13, 0x14, 0x15, 0x17]
+  MapTileAttributes: { Normal: 0x00, SecretBaseWall: 0x01, TallGrass: 0x02, LongGrass: 0x03, Unused_04: 0x04, Unused_05: 0x05, UnusedDeepSand: 0x06, ShortGrass: 0x07, UnusedCave: 0x08, LongGrassSouthEdge: 0x09, NoRunning: 0x0A, IndoorEncounter: 0x0B, MountainTop: 0x0C, SecretBaseGlitterMatttlePyramidWarp: 0x0D, MossdeepGymWarp: 0x0E, MtPyreHole: 0x0F, PondWater: 0x10, SemiDeepWater: 0x11, UnusedDeepWater: 0x12, Waterfall: 0x13, SootopolisDeepWater: 0x14, OceanWater: 0x15, Puddle: 0x16, ShallowWater: 0x17, UnusedSootopolisDeepWater: 0x18, NoSurfacing: 0x19, UnusedSootopolisDeepWater_2: 0x1A, StairsOutsideAbandonedShip: 0x1B, ShoalCaveEntrance: 0x1C, Unused_1D: 0x1D, Unused_1E: 0x1E, Unused_1F: 0x1F, Ice: 0x20, Sand: 0x21, Seaweed: 0x22, Unused_23: 0x23, Ashgrass: 0x24, Footprints: 0x25, ThinIce: 0x26, CrackedIce: 0x27, HotSprings: 0x28, LavaridgeGymB1FWarp: 0x29, SeaweedNoSurfacing: 0x2A, ReflectionUnderBridge: 0x2B, Unused_2C: 0x2C, Unused_2D: 0x2D, Unused_2E: 0x2E, Unused_2F: 0x2F, ImpassableEast: 0x30, ImpassableWest: 0x31, ImpassableNorth: 0x32, ImpassableSouth: 0x33, ImpassableNortheast: 0x34, ImpassableNorthwest: 0x35, ImpassableSoutheast: 0x36, ImpassableSouthwest: 0x37, JumpEast: 0x38, JumpWest: 0x39, JumpNorth: 0x3A, JumpSouth: 0x3B, JumpNortheast: 0x3C, JumpNorthwest: 0x3D, JumpSoutheast: 0x3E, JumpSouthwest: 0x3F, WalkEast: 0x40, WalkWest: 0x41, WalkNorth: 0x42, WalkSouth: 0x43, SlideEast: 0x44, SlideWest: 0x45, SlideNorth: 0x46, SlideSouth: 0x47, TrickHousePuzzle_8Floor: 0x48, Unused_49: 0x49, Unused_4A: 0x4A, Unused_4B: 0x4B, Unused_4C: 0x4C, Unused_4D: 0x4D, Unused_4E: 0x4E, Unused_4F: 0x4F, UnusedEastwardCurrent: 0x50, WestwardCurrent: 0x51, NorthwardCurrent: 0x52, SouthwardCurrent: 0x53, Unused_54: 0x54, Unused_55: 0x55, Unused_56: 0x56, Unused_57: 0x57, Unused_58: 0x58, Unused_59: 0x59, Unused_5A: 0x5A, Unused_5B: 0x5B, Unused_5C: 0x5C, Unused_5D: 0x5D, Unused_5E: 0x5E, Unused_5F: 0x5F, NonAnimatedDoor: 0x60, Ladder: 0x61, UnusedEastArrowWarp: 0x62, WestArrowWarp: 0x63, NorthArrowWarp: 0x64, SouthArrowWarp: 0x65, CrackedFloorHole: 0x66, AquaHideoutWarp: 0x67, LavaridgeGym_1FWarp: 0x68, AnimatedDoor: 0x69, UpEscalator: 0x6A, DownEscalator: 0x6B, WaterDoor: 0x6C, WaterSouthArrowWarp: 0x6D, UnusedDeepSouthWarp: 0x6E, Unused_6F: 0x6F, WarpOrBridge: 0x70, Unused_71: 0x71, Route120NorthBridge_1: 0x72, Route120NorthBridge_2: 0x73, PacifidlogVerticalLog_1: 0x74, PacifidlogVerticalLog_2: 0x75, PacifidlogHorizontalLog_1: 0x76, PacifidlogHorizontalLog_2: 0x77, FortreeBridge: 0x78, Unused_79: 0x79, Route120SouthBridge_1: 0x7A, Route120SouthBridge_2: 0x7B, Route120NorthBridge_3: 0x7C, Route120NorthBridge_4: 0x7D, Unused_7E: 0x7E, Route110Bridge: 0x7F, Counter: 0x80, Unused_81: 0x81, Unused_82: 0x82, Pc: 0x83, LinkBattleRecords: 0x84, RegionMap: 0x85, Television: 0x86, PokemetatileFeeder: 0x87, Unused_88: 0x88, SlotMachine: 0x89, Roulette: 0x8A, ClosedSootopolisDoor: 0x8B, TrickHousePuzzleDoor: 0x8C, PetalburgGymDoor: 0x8D, RunningShoesManual: 0x8E, Questionnaire: 0x8F, SecretBaseSpotRedCave: 0x90, SecretBaseSpotRedCaveOpen: 0x91, SecretBaseSpotBrownCave: 0x92, SecretBaseSpotBrownCaveOpen: 0x93, SecretBaseSpotYellowCave: 0x94, SecretBaseSpotYellowCaveOpen: 0x95, SecretBaseSpotTree_1: 0x96, SecretBaseSpotTree_1Open: 0x97, SecretBaseSpotShrub: 0x98, SecretBaseSpotShrubOpen: 0x99, SecretBaseSpotBlueCave: 0x9A, SecretBaseSpotBlueCaveOpen: 0x9B, SecretBaseSpotTree_2: 0x9C, SecretBaseSpotTree_2Open: 0x9D, Unused_9E: 0x9E, Unused_9F: 0x9F, BerryTreeSoil: 0xA0, UnusedA1: 0xA1, UnusedA2: 0xA2, UnusedA3: 0xA3, UnusedA4: 0xA4, UnusedA5: 0xA5, UnusedA6: 0xA6, UnusedA7: 0xA7, UnusedA8: 0xA8, UnusedA9: 0xA9, UnusedAa: 0xAA, UnusedAb: 0xAB, UnusedAc: 0xAC, UnusedAd: 0xAD, UnusedAe: 0xAE, UnusedAf: 0xAF, SecretBasePc: 0xB0, RecordMixingSecretBasePc: 0xB1, SecretBaseUnused: 0xB2, MetatileDecoration: 0xB3, SecretBaseDecoration: 0xB4, SecretBaseLargeMatEdge: 0xB5, UnusedB6: 0xB6, SecretBaseNorthWall: 0xB7, SecretBaseBalloon: 0xB8, SecretBaseImpassable: 0xB9, SecretBaseGlitterMat: 0xBA, SecretBaseJumpMat: 0xBB, SecretBaseSpinMat: 0xBC, SecretBaseMusicNoteMat: 0xBD, SecretBaseBreakableDoor: 0xBE, SecretBaseSandOrnament: 0xBF, ImpassableSouthAndNorth: 0xC0, ImpassableWestAndEast: 0xC1, SecretBaseHole: 0xC2, LargeMatCenter: 0xC3, SecretBaseShieldOrToyTv: 0xC4, PlayerRoomPcOn: 0xC5, UnusedC6: 0xC6, UnusedC7: 0xC7, UnusedC8: 0xC8, UnusedC9: 0xC9, UnusedCa: 0xCA, UnusedCb: 0xCB, UnusedCc: 0xCC, UnusedCd: 0xCD, UnusedCe: 0xCE, UnusedCf: 0xCF, MuddySlope: 0xD0, BumpySlope: 0xD1, CrackedFloor: 0xD2, IsolatedVerticalRail: 0xD3, IsolatedHorizontalRail: 0xD4, VerticalRail: 0xD5, HorizontalRail: 0xD6, UnusedD7: 0xD7, UnusedD8: 0xD8, UnusedD9: 0xD9, UnusedDa: 0xDA, UnusedDb: 0xDB, UnusedDc: 0xDC, UnusedDd: 0xDD, UnusedDe: 0xDE, UnusedDf: 0xDF, PictureBookShelf: 0xE0, Bookshelf: 0xE1, PokemonCenterBookshelf: 0xE2, Vase: 0xE3, TrashCan: 0xE4, ShopShelf: 0xE5, Blueprint: 0xE6, UnusedE7: 0xE7, UnusedE8: 0xE8, UnusedE9: 0xE9, UnusedEa: 0xEA, UnusedEb: 0xEB, UnusedEc: 0xEC, UnusedEd: 0xED, UnusedEe: 0xEE, UnusedEf: 0xEF }
+  SpeciesIcons: 0x3BBD3C
+  SpeciesIconPaletteChoices: 0x3BC41C
+  SpeciesIconPalettes: 0xE966D8
+  SpeciesIconPaletteCount: 3
+  SpeciesNames: 0x1F7184
+  SpeciesNameSize: 11
+  SpeciesConstants: # In order of appearance of sprites on rom
+    Missing: { Amount: 1 }
+    Gen 1: { Amount: 151 }
+    Gen 2: { Amount: 100 }
+    Skip: { Amount: 25, Skip: true }
+    Gen 3: { Amount: 135 }
+    Egg: { Amount: 1, DataType: 2, SpeciesBaseStatsOffset: -1 }
+    UnownForms: { Amount: 25, DataType: 3, AsciiOffset: 66, SpeciesBaseStatsOffset: -161 }
+    UnownFormsExclamation: { Amount: 1, DataType: 3, AsciiOffset: 33, SpeciesBaseStatsOffset: -162 }
+    UnownFormsQuestionMark: { Amount: 1, DataType: 3, AsciiOffset: 63, SpeciesBaseStatsOffset: -163 }
+  SpeciesBaseStats: 0x1FEC30
+  SpeciesEvolutions: 0x203B80
+  SpeciesSprites: 0x1E836C
+  SpeciesPalettes: 0x1EA5CC
+  SpeciesShinyPalettes: 0x1EB38C
+  SpeciesBackSprites: 0x1E980C
+  ExperienceSpeeds: 0x1FDF90
+  ExperienceSpeedsCount: 8
+  OverworldSprites: 0x36DC70
+  OverworldSpriteCount: 217
+  OverworldPalettes: 0x373794
+  TrainerSprites: 0x1EC554
+  TrainerPalettes: 0x1EC7EC
+  TrainerSpriteCount: 83
+- &firered-en
+  Name: Pokémon FireRed
+  Language: en
+  Code: BPRE
+  BattleAnimCount: 288
+  BattleAnimParticles: 0x3ACC08
+  BattleAnimTemplatesUnknown: 0x3E7830
+  BattleAnimTemplatesUnknownCount: 4
+  Moves: 0x1C68EC
+  MoveNames: 0x2470A1
+  MovesQuietBgmCount: 3
+  MovesCount: 356
+  MovesStatusCount: 9
+  MovesGeneralCount: 28
+  MovesSpecialCount: 7
+  MapNames: 0x3EECFC
+  MapNamesCount: 109
+  MapNameOffset: -88
+  MapBanks: 0x5524C
+  MapLabels: 0x3F1CAC
+  MapWildPokemon: 0x82990
+  # Must be sorted lowest to highest
+  MapTileAttributesJumpNorth: 0x3A
+  MapTileAttributesJumpEast: 0x38
+  MapTileAttributesJumpSouth: 0x3B
+  MapTileAttributesJumpWest: 0x39
+  MapTileAttributesSurfOnly: [0x10, 0x11, 0x12, 0x13, 0x15, 0x16, 0x17, 0x19 ]
+  MapTileAttributes: { Normal: 0x00, Unknown_01: 0x01, TallGrass: 0x02, Cave: 0x08, RunningDisallowed: 0x0A, Unknown_0B: 0x0B, Unknown_0C: 0x0C, PondWater: 0x10, SemiDeepWater: 0x11, DeepWater: 0x12, Waterfall: 0x13, OceanWater: 0x15, Puddle: 0x16, ShallowWater: 0x17, UnderwaterMetatileedAbove: 0x19, Unknown_1A: 0x1A, Unknown_1B: 0x1B, StrengthButton: 0x20, Sand: 0x21, Seaweed: 0x22, Ice: 0x23, ThinIce: 0x26, CrackedIce: 0x27, HotSprings: 0x28, RockStairs: 0x2A, SandCave: 0x2B, ImpassableEast: 0x30, ImpassableWest: 0x31, ImpassableNorth: 0x32, ImpassableSouth: 0x33, ImpassableNortheast: 0x34, ImpassableNorthwest: 0x35, ImpassableSoutheast: 0x36, ImpassableSouthwest: 0x37, JumpEast: 0x38, JumpWest: 0x39, JumpNorth: 0x3A, JumpSouth: 0x3B, JumpSoutheast: 0x3E, JumpSouthwest: 0x3F, WalkEast: 0x40, WalkWest: 0x41, WalkNorth: 0x42, WalkSouth: 0x43, SlideEast: 0x44, SlideWest: 0x45, SlideNorth: 0x46, SlideSouth: 0x47, UnknownMovement_48: 0x48, EastwardCurrent: 0x50, WestwardCurrent: 0x51, NorthwardCurrent: 0x52, SouthwardCurrent: 0x53, SpinRight: 0x54, SpinLeft: 0x55, SpinUp: 0x56, SpinDown: 0x57, StopSpinning: 0x58, CaveDoor: 0x60, Ladder: 0x61, EastArrowWarp: 0x62, WestArrowWarp: 0x63, NorthArrowWarp: 0x64, SouthArrowWarp: 0x65, FallWarp: 0x66, RegularWarp: 0x67, Lavaridge_1FWarp: 0x68, WarpDoor: 0x69, UpEscalator: 0x6A, DownEscalator: 0x6B, UpRightStairWarp: 0x6C, UpLeftStairWarp: 0x6D, DownRightStairWarp: 0x6E, DownLeftStairWarp: 0x6F, UnionRoomWarp: 0x71, Counter: 0x80, Bookshelf: 0x81, PokemartShelf: 0x82, Pc: 0x83, Signpost: 0x84, RegionMap: 0x85, Television: 0x86, PokemonCenterSign: 0x87, PokemartSign: 0x88, Cabinet: 0x89, Kitchen: 0x8A, Dresser: 0x8B, Snacks: 0x8C, Unknown_8D: 0x8D, BattleRecords: 0x8E, Questionnaire: 0x8F, Food: 0x90, IndigoPlateauMarkDpad: 0x91, IndigoPlateauMark_2Dpad: 0x92, Blueprints: 0x93, Painting: 0x94, PowerPlantMachine: 0x95, Telephone: 0x96, Computer: 0x97, AdvertisingPoster: 0x98, FoodSmellsTasty: 0x99, TrashBin: 0x9A, Cup: 0x9B, Porthole: 0x9C, BlinkingLights: 0x9E, NeatlyLinedUpTools: 0x9F, ImpressiveMachine: 0xA0, VideoGame: 0xA1, Burglary: 0xA2, TrainerTowerMonitor: 0xA3, CyclingRoadPullDown: 0xD0, CyclingRoadPullDownGrass: 0xD1 }
+  SpeciesConstants: # In order of appearance of sprites on rom
+    Missing: { Amount: 1 }
+    Gen 1: { Amount: 151 }
+    Gen 2: { Amount: 100 }
+    Skip: { Amount: 25, Skip: true }
+    Gen 3: { Amount: 135 }
+    Egg: { Amount: 1, DataType: 2, SpeciesBaseStatsOffset: -1 }
+    UnownForms: { Amount: 25, DataType: 3, AsciiOffset: 66, SpeciesBaseStatsOffset: -161 }
+    UnownFormsExclamation: { Amount: 1, DataType: 3, AsciiOffset: 33, SpeciesBaseStatsOffset: -162 }
+    UnownFormsQuestionMark: { Amount: 1, DataType: 3, AsciiOffset: 63, SpeciesBaseStatsOffset: -163 }
+  SpeciesBaseStats: 0x254784
+  SpeciesEvolutions: 0x259754
+  SpeciesIcons: 0x3D37A0
+  SpeciesIconPaletteChoices: 0x3D3E80
+  SpeciesIconPalettes: 0x3D3740
+  SpeciesIconPaletteCount: 3
+  SpeciesNames: 0x245EE0
+  SpeciesNameSize: 11
+  SpeciesSprites: 0x2350AC
+  SpeciesPalettes: 0x23730C
+  SpeciesShinyPalettes: 0x2380CC
+  SpeciesBackSprites: 0x23654C
+  ExperienceSpeeds: 0x253AE4
+  ExperienceSpeedsCount: 8
+  OverworldSprites: 0x39fdb0
+  OverworldSpriteCount: 152
+  OverworldPalettes: 0x3a5158
+  TrainerSprites: 0x23957C
+  TrainerPalettes: 0x239A1C
+  TrainerSpriteCount: 147
+- &leafgreen-en
+  <<: *firered-en
+  Name: Pokémon LeafGreen
+  Language: en
+  Code: BPGE
+  BattleAnimParticles: 0x3ACBE8
+  BattleAnimTemplatesUnknown: 0x3E766C
+  Moves: 0x1C68C8
+  MoveNames: 0x24707D
+  MapNames: 0x3EEB38
+  MapLabels: 0x3F1AE8
+  MapWildPokemon: 0xB4D48
+  SpeciesEvolutions: 0x259734
+  SpeciesIcons: 0x3D35DC
+  SpeciesIconPaletteChoices: 0x3D3CBC
+  SpeciesIconPalettes: 0x3D357C
+  SpeciesNames: 0x245EBC
+  SpeciesSprites: 0x235088
+  SpeciesPalettes: 0x2372E8
+  SpeciesShinyPalettes: 0x2380A8
+  SpeciesBackSprites: 0x236528
+  ExperienceSpeeds: 0x253AC0
+  OverworldSprites: 0x39FD90
+  OverworldPalettes: 0x3A5138
+  TrainerSprites: 0x239558
+  TrainerPalettes: 0x2399F8
